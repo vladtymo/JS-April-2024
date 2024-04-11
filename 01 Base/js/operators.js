@@ -67,7 +67,7 @@ console.log("Original Salary: ", salary);
 let copy = ++salary;
 
 console.log("Salary: ", salary); // 2001
-console.log("Copy: ", copy); // 2001
+console.log("Copy: ", copy); // 2000
 
 // ------------- type conversion
 let invalidNumber = NaN;
@@ -97,11 +97,11 @@ console.log("Type of variable:", typeof (number));
 console.log("isNaN: ", isNaN('hello'));          // true
 
 // Number.isNaN - only check if it's equals to NaN
-console.log("Number.isNaN: ", Number.isNaN(12341)); // false
+console.log("Number.isNaN: ", Number.isNaN("hello")); // false
 
 // to integer: parseInt(value)
 // to real: parseFloat(value)
-console.log(parseInt("34.99")); // 34
+console.log(parseInt("34.99%")); // 34
 console.log(parseFloat("34.99")); // 34.99
 
 console.log("Red" + "Green");

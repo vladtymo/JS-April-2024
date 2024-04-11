@@ -69,7 +69,7 @@ console.log(`Hello, ${username.toUpperCase()}!`);
 // convert string to number: Number(str) +str
 const year = +prompt("What is current year?");
 
-if (isNaN(year)) {
+if (Number.isNaN(year)) {
     console.warn("Invalid number format!");
 }
 else {
