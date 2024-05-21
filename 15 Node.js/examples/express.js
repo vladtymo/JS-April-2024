@@ -1,10 +1,18 @@
 // ---------- server logic ----------
 
 const fs = require('fs');
+const cors = require('cors');
 
 // connect express module
 const express = require('express'),
     app = express();
+
+app.use(cors()); // allow all
+
+// allow specific origins only
+// app.use(cors({
+//     origin: ['http://127.0.0.1:5500']
+// })); 
 
 const hostname = 'localhost';
 const port = 4400;
